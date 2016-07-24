@@ -1,0 +1,12 @@
+
+	
+	
+<div>
+	<h2>Cart</h2>
+
+<?php foreach ($cart['items'] as $item) {
+	
+	printf("<p>%s is $%d</p>\n", $item['name'], $item['price']);
+	
+} ?>
+</div>

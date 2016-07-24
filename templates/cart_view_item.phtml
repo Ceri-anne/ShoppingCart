@@ -1,0 +1,9 @@
+
+
+<div>
+	<h2>New Item</h2>
+	<?php if(file_exists("uploads/{$new_item['name']}.jpg")): ?>
+		<img src="uploads/<?=$new_item['name'];?>.jpg" width="150" />
+	<?php endif; ?>
+	<p><?php printf('%s is $%d',  $new_item['name'], $new_item['price'] ); ?></p>
+</div>
